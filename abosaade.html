@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Abo Saade</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="abosaade.css">
+
+
+ 
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <title>Abo Saade</title>
+    <style>
+            .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+            .toggle.ios .toggle-handle { border-radius: 20px; }
+    </style>
+    
+</head>
+<body>
+        <div class="sticky-top"  style="background-color: 2B2D5F">
+                <div id="hedhed">
+                   <div class="row col-sm-12">
+                      <div class="col-xl-8 col-sm-12 col-md-8">
+                       <!-- the header -->
+                       <h1 class="display-1" id="Cryptonite"><strong>Cryptonite</strong></h1>
+                   </div>
+                   <div class="col-xl-4 col-sm-12 col-md-8" >
+                       <img id="imgeTOP" src="https://scontent.ftlv1-1.fna.fbcdn.net/v/t1.0-9/15356531_10209879269810098_671233281985625738_n.jpg?_nc_cat=101&_nc_ht=scontent.ftlv1-1.fna&oh=85e4f493065f11ba23f92f8bbb62c6ec&oe=5D1097D7"/>
+                   </div>
+                   </div>
+                       <!-- Navbar content -->    
+               <div class="navbar navbar-dark bg-primary sticky-top row">
+                   <div class="col-xl-6 col-sm-12 col-md-4 row">
+                    <!-- the Home and this is onClick your fun  Home()    -->
+                    <button class="navbar-brand btn btn-outline-dark" onclick="HomeClick()" style="margin-left:20px;" type="button"><strong>Home</strong></button>
+                    <!-- the Home and this is Grafh your fun  Grafh()    -->
+                    <button class="btn btn-outline-dark" onclick="GrafhClick()" type="button"><strong>Grafh</strong></button>
+                    <!-- the About and this is onClick your fun  About()    -->
+                    <button class="btn btn-outline-dark" onclick="AboutClick()" type="button"><strong>About</strong></button>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 col-md-4 row">
+                        <div class="col-xl-6 col-sm-12 col-md-4">
+                            <input id="ValueSerch" class="form-control" type="text" name="Search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div class="col-xl-6 col-sm-12 col-md-4"><!-- this is a serch input id // serchValue // and the fun ClickSerch()    -->
+                            <button class="btn btn-outline-success" id="submitSearch" type="button" onclick="ClickSerch()">Search</button>
+                        </div>
+                    </div>
+                </div>
+               </div>
+                <div style="background-color:A8257C;">
+                   <nav class="navbar">
+                           <ul class="navbar-nav mr-auto tt">
+                               <button  onclick="hodhod()" style="background-color:A8257C; height:20px;">
+                               <img src="https://ar.seaicons.com/wp-content/uploads/2015/10/Arrow-Up-2-icon.png" style="height:20px;"/>
+                           </ul>
+                       </div>    
+                   </nav>
+               </div>
+               
+               </div>
+               </div>
+
+        
+
+
+            
+
+
+                            <!-- this is a Modell and your id //  myModal-->
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title"><strong>select wahte you dont to change</strong></h5>
+                 <!-- this button onclick // Modell() //  -->
+                  <button type="button" class="close" data-dismiss="modal" onclick="Modell()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Modal body text goes here.</strong></p>
+                  <!-- id = Cchange  this change a select -->
+                  <div id="Cchange">
+        
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" onclick="Modell()" data-dismiss="modal">Close</button>
+                  <!-- this button onclick // Modell() // and // saveChange()  -->
+                  <button type="button" class="btn btn-primary" onclick="saveChange()">Save changes</button>  
+                </div>
+              </div>
+            </div>
+          </div>
+                            <!-- end the Modell -->
+
+
+            <!-- top div -->
+          <div class="container">
+                <!-- id div Home -->
+                <div  id="Home" class="row" style="width:100%;text-align: center;">
+    
+                </div>
+                <!-- id div id="About" -->
+                <div  id="About1" class="row" style="width:100%;text-align: center;">
+                    <div class="col-3"></div>
+                    <div id="About" class="col-6"></div>
+                    <div class="col-3"></div>
+                </div>
+                <!-- id div Grafh -->
+                <div  id="Grafh" class="row" style="width:100%;text-align: center;">
+                        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                </div>
+                <!-- id div Seerch -->
+                <div  id="Seerch" class="row" style="width:100%;text-align: center;">
+    
+                </div>
+              </div>
+
+
+
+                                <!-- Ggraff -->
+              <div class="modal" id="Ggraff" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Pless Select wahte do you want ?</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="CloseModelGrafh()">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                                <button type="button" onclick="LiveReports1()" class="btn btn-primary">EUR</button>
+                                <button type="button" onclick="LiveReports2()" class="btn btn-primary">ILS</button>
+                                <button type="button" onclick="LiveReports3()" class="btn btn-primary">USD</button>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="CloseModelGrafh()">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+
+</body>
+</html>
+
+
+<!-- <script src="ss.js"></script>   -->
+<script src="abosaade.js"></script>   
+<script src="grafhEUR.js"></script><!-- 1 -->
+<script src="grafhILS.js"></script> <!-- 2 -->
+<script src="grafhUSD.js"></script>  <!-- 3 -->
+</body>
+
+
+</html>
